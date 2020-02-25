@@ -4,15 +4,11 @@ var quizQuestions = [
       answers: [
           {
               type: "Microsoft",
-              content: "Halo"
+              content: "Alexa accidently sent that conversation you had with your mom to your friend"
           },
           {
               type: "Nintendo",
               content: "Pokemon"
-          },
-          {
-              type: "Sony",
-              content: "Uncharted"
           }
       ]
   },
@@ -26,10 +22,6 @@ var quizQuestions = [
           {
               type: "Nintendo",
               content: "Nintendo 64"
-          },
-          {
-              type: "Sony",
-              content: "Playstation 1"
           }
       ]
   },
@@ -43,10 +35,6 @@ var quizQuestions = [
           {
               type: "Nintendo",
               content: "Mario Kart"
-          },
-          {
-              type: "Sony",
-              content: "Gran Turismo"
           }
       ]
   },
@@ -60,10 +48,6 @@ var quizQuestions = [
           {
               type: "Nintendo",
               content: "The Legend of Zelda: Ocarina of Time"
-          },
-          {
-              type: "Sony",
-              content: "Final Fantasy VII"
           }
       ]
   },
@@ -77,10 +61,6 @@ var quizQuestions = [
           {
               type: "Nintendo",
               content: "Wii U"
-          },
-          {
-              type: "Sony",
-              content: "Playstation 4"
           }
       ]
   }

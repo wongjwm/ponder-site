@@ -6,7 +6,7 @@
 .App-header {
   background-color: #222;
   padding: 20px;
-  color: white;
+  color: rgb(221, 133, 133);
   text-align: center;
 }
 
@@ -21,4 +21,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ------ */
+
+.App {
+  font-family: Avenir;
+}
+
+.NavBar {
+  display: flex;
 }

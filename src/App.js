@@ -4,6 +4,7 @@ import Quiz from './components/Quiz';
 import Result from './components/Result';
 import logo from './svg/logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
 
 class App extends Component {
   constructor(props) {
@@ -122,10 +123,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>React Quiz</h2>
-        </div>
+
+        <NavBar/>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
