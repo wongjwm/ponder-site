@@ -8,11 +8,12 @@ function ResultBar(props) {
 
   return (
     <div className="resultsbar">
-      <div className="bar" />
-      <div className="difference"
-           style={{left: Math.min(youPosn, averagePosn) + "%",
-                  width: Math.abs(youPosn - averagePosn) + "%",
-                  background: differenceColor}}/>
+      <div className="bar">
+        <div className="difference"
+              style={{left: Math.min(youPosn, averagePosn) + "%",
+                    width: Math.abs(youPosn - averagePosn) + "%",
+                    background: differenceColor}} />
+      </div>
       <label className="response" style={{left: "calc(" + (youPosn + "%") + " - 50px"}}>You</label>
       <label className="average" style={{left: "calc(" + (averagePosn + "%") + " - 50px"}}>Average</label>
     </div>
