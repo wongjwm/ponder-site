@@ -146,3 +146,55 @@ body {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
+
+.resultsbar {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 25px 0px 35px;
+
+  background: white;
+  height: 25px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25),
+              0px 2px 6px rgba(0, 0, 0, 0.1),
+              inset 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.resultsbar > .difference {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  background: #ccc;
+  opacity: 0.25;
+}
+
+.resultsbar > label {
+  display: block;
+  width: 100px;
+  position: absolute;
+  text-align: center;
+}
+.resultsbar > label:first-of-type {
+  top: 100%;
+}
+.resultsbar > label:last-of-type {
+  bottom: 100%;
+}
+
+.resultsbar > label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50px;
+
+  background: black;
+  width: 1px;
+  height: 25px;
+}
+.resultsbar > label:first-of-type::before {
+  top: -25px;
+}
+.resultsbar > label:last-of-type::before {
+  top: 100%;
+}

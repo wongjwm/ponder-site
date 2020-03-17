@@ -1,27 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransitionGroup } from 'react-transition-group';
+import ResultBar from './ResultBar.js';
 
 function Result(props) {
+  
+
   return (
-    <CSSTransitionGroup
-      className="container result"
-      component="div"
-      transitionName="fade"
-      transitionEnterTimeout={800}
-      transitionLeaveTimeout={500}
-      transitionAppear
-      transitionAppearTimeout={500}
-    >
-      <div>
-        You prefer <strong>{props.quizResult}</strong>!
-      </div>
-    </CSSTransitionGroup>
+    <div className="result">
+      <h2>{props.vals.name}</h2>
+      <ResultBar you={props.vals.you} average={props.vals.average} />
+      <p>{props.vals.description}</p>
+    </div>
   );
 }
-
-Result.propTypes = {
-  quizResult: PropTypes.string.isRequired
-};
 
 export default Result;

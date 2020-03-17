@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
-import Result from './components/Result';
+import ResultsList from './components/ResultsList';
 import logo from './svg/logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
@@ -117,7 +117,8 @@ class App extends Component {
   }
 
   renderResult() {
-    return <Result quizResult={this.state.result} />;
+    // return <Result quizResult={this.state.result} />;
+    return <ResultsList />;
   }
 
   render() {
