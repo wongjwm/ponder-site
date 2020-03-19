@@ -1,14 +1,13 @@
 import React from 'react';
-import logo from '../svg/logo.svg';
 
 function NavBar() {
   return (
-    <div class="NavBar">
-    <img src={logo} className="App-logo" alt="logo" />
-      <h2>Ponder</h2>
-      <div className="NavBar-links">
+    <div class="nav-bar">
+    {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <h3>Ponder</h3>
+      <div className="nav-bar-links">
         <a class="about-link" src="/about">about</a>
-        <a class="about-link" src="/about"></a>
+        <a class="about-link" src="/about">feedback</a>
         <a class="about-link" src="/about"></a>
       </div>
     </div>

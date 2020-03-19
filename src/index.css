@@ -17,10 +17,36 @@ code {
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Courier";
+  font-family: "bold";
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #1752EB;
+}
+
+h2 {
+  font-family: "Courier";
+  font-family: "bold";
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #1752EB;
+}
+
+h3 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #eee;
+  background: #FDFFF5;
   font-family: sans-serif;
 }
 
@@ -38,6 +64,21 @@ body {
   }
 }
 
+
+/* Nav Bar*/
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3A353A;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.nav-bar-links {
+  display: inline;
+  
+}
+
 /* Result Component */
 .result {
   padding: 1.5rem 2.5rem;
@@ -48,6 +89,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 /* QuestionCount Component */
@@ -63,6 +105,17 @@ body {
 }
 
 /* AnswerOption Component */
+.answerOptionContainer {
+  text-align: center;
+}
+
+.placeholderImage {
+  background-color: #1752EB;
+  height: 400px;
+  width: 300px;
+  display: inline-block;
+}
+
 .answerOption {
   border-top: 1px solid #eee;
 }

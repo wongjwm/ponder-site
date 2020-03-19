@@ -1,66 +1,70 @@
 var quizQuestions = [
   {
-      question: "What franchise would you rather play a game from?",
+      question: "Would you rather",
       answers: [
           {
-              type: "Microsoft",
-              content: "Alexa accidently sent that conversation you had with your mom to your friend"
+              type: "Voice",
+              content: "Alexa accidently sent that conversation you had with your mom to your friend",
+              image: "placeholder.png",
+              captionTitle: "Amazon",
+              caption: "The creator of Alexa, a personal assistant that lives in your home and can be activated at any time."
           },
           {
-              type: "Nintendo",
-              content: "Pokemon"
+              type: "Media",
+              content: "Tik Tok use your content for its ads without any of your formal consent",
+              image: "placeholder.png"
           }
       ]
   },
   {
-      question: "Which console would you prefer to play with friends?",
+      question: "Would you rather",
       answers: [
           {
-              type: "Microsoft",
-              content: "X-Box"
+              type: "Personal Metadata",
+              content: "Have your Facebook profile harvested by some 3rd party data company"
           },
           {
-              type: "Nintendo",
-              content: "Nintendo 64"
+              type: "Location",
+              content: "Snapchat leak your history of location data to the public"
           }
       ]
   },
   {
-      question: "Which of these racing franchises would you prefer to play a game from?",
+      question: "Would you rather",
       answers: [
           {
-              type: "Microsoft",
-              content: "Forza"
+              type: "Voice",
+              content: "Your phone use keyworks heard through its microphone to show you more relevant ads"
           },
           {
-              type: "Nintendo",
-              content: "Mario Kart"
+              type: "Personal Metadata",
+              content: "Your VPN be found to be vulnerable to a malicious 3rd party who was able to access your history"
           }
       ]
   },
   {
-      question: "Which of these games do you think is best?",
+      question: "Would you rather",
       answers: [
           {
-              type: "Microsoft",
-              content: "BioShock"
+              type: "Personal Metadata",
+              content: "A site you logged into with your Facebook account access your information as well that of your friends"
           },
           {
-              type: "Nintendo",
-              content: "The Legend of Zelda: Ocarina of Time"
+              type: "Image",
+              content: "Snapchat does not disclose the amount of time that it keeps your snaps on its server"
           }
       ]
   },
   {
-      question: "What console would you prefer to own?",
+      question: "Would you rather",
       answers: [
           {
-              type: "Microsoft",
-              content: "X-Box One"
+              type: "Personal Metadata",
+              content: "Your Phone’s Face ID wrongly let someone else access your phone"
           },
           {
-              type: "Nintendo",
-              content: "Wii U"
+              type: "Location",
+              content: "Your RING home security camera is able to be hacked and controlled by a third party."
           }
       ]
   }

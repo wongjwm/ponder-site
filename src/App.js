@@ -123,8 +123,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-        <NavBar/>
+      <NavBar/>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
