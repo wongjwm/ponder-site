@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import quizQuestions from '../api/quizQuestions';
 import Quiz from './Quiz';
-import Result from './Result';
+import ResultsList from './ResultsList';
 import '../App.css';
 
 class QuizContainer extends Component {
@@ -115,7 +115,7 @@ class QuizContainer extends Component {
   }
 
   renderResult() {
-    return <Result quizResult={this.state.result} />;
+    return <ResultsList quizResult={this.state.result} />;
   }
 
   render() {
