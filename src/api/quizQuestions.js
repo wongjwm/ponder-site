@@ -1,10 +1,10 @@
 var quizQuestions = [
   {
-      question: "Would you rather",
+      question: "Would you rather...",
       answers: [
           {
               type: "Voice",
-              content: "Alexa accidently sent that conversation you had with your mom to your friend",
+              content: "Google Home mistakenly sends a private conversation you are having to a coworker",
               image: "placeholder.png",
               captionTitle: "Amazon",
               caption: "The creator of Alexa, a personal assistant that lives in your home and can be activated at any time."
@@ -17,37 +17,37 @@ var quizQuestions = [
       ]
   },
   {
-      question: "Would you rather",
-      answers: [
-          {
-              type: "Personal Metadata",
-              content: "Have your Facebook profile harvested by some 3rd party data company"
-          },
-          {
-              type: "Location",
-              content: "Snapchat leak your history of location data to the public"
-          }
-      ]
-  },
-  {
-      question: "Would you rather",
-      answers: [
-          {
-              type: "Voice",
-              content: "Your phone use keyworks heard through its microphone to show you more relevant ads"
-          },
-          {
-              type: "Personal Metadata",
-              content: "Your VPN be found to be vulnerable to a malicious 3rd party who was able to access your history"
-          }
-      ]
-  },
-  {
-      question: "Would you rather",
+      question: "Would you rather...",
       answers: [
           {
               type: "Personal Metadata",
               content: "A site you logged into with your Facebook account access your information as well that of your friends"
+          },
+          {
+              type: "Location",
+              content: "Snapchat's map feature shows your location to unknown viewers"
+          }
+      ]
+  },
+  {
+      question: "Would you rather...",
+      answers: [
+          {
+              type: "Voice",
+              content: "You phone uses keywords heard through it's microphone to show you targeted ads"
+          },
+          {
+              type: "Personal Metadata",
+              content: "Your VPN is found to be vulnerable to a malicious 3rd party that was able to access your internet history"
+          }
+      ]
+  },
+  {
+      question: "Would you rather...",
+      answers: [
+          {
+              type: "Personal Metadata",
+              content: "Facebook targets advertisements to you using the information you entered into Facebook such as your name and birthday."
           },
           {
               type: "Image",
@@ -56,18 +56,58 @@ var quizQuestions = [
       ]
   },
   {
-      question: "Would you rather",
+      question: "Would you rather...",
       answers: [
           {
               type: "Personal Metadata",
-              content: "Your Phone’s Face ID wrongly let someone else access your phone"
+              content: "Twitter adds your birthdate to your Twitter profile bio by default without asking for permission"
           },
           {
               type: "Location",
-              content: "Your RING home security camera is able to be hacked and controlled by a third party."
+              content: "Twitter's location feature adds your location to your tweets without you realizing it"
           }
       ]
-  }
+  },
+  {
+    question: "Would you rather...",
+    answers: [
+        {
+            type: "Voice",
+            content: "Amazon reveals that employees are able to listen in on random users' Echo voice recordings, without notifying users"
+        },
+        {
+            type: "Location",
+            content: "Your RING home security camera's footage is able to be accessed by the hackers, who can find out your home's location"
+        }
+    ]
+  },
+  {
+    question: "Would you rather...",
+    answers: [
+        {
+            type: "Voice",
+            content: "Amazon reveal that employees are able to listen in on random users' Echo voice recordings, without notifying users"
+        },
+        {
+            type: "Location",
+            content: "Your RING home security camera's footage is able to be accessed by the hackers, who can find out your home's location"
+        }
+    ]
+  },
+  {
+    question: "Would you rather...",
+    answers: [
+        {
+            type: "Voice",
+            content: "Google Home targets ads to you based on your past voice commands"
+        },
+        {
+            type: "Location",
+            content: "Certain websites use you computer's location to target ads related to where you live"
+        }
+    ]
+  },
+    
 ];
 
 export default quizQuestions;
