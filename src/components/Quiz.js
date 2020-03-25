@@ -14,6 +14,9 @@ function Quiz(props) {
         answerType={key.type}
         answer={props.answer}
         questionId={props.questionId}
+        image={props.image}
+        captionTitle={props.captionTitle}
+        caption={props.caption}
         onAnswerSelected={props.onAnswerSelected}
       />
     );

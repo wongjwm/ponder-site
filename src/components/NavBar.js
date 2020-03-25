@@ -1,18 +1,13 @@
 import React from 'react';
-import logo from '../svg/logo.svg';
+import { NavLink, Switch, Route } from 'react-router-dom';
 
-function NavBar() {
-  return (
-    <div class="NavBar">
-    <img src={logo} className="App-logo" alt="logo" />
-      <h2>Ponder</h2>
-      <div className="NavBar-links">
-        <a class="about-link" src="/about">about</a>
-        <a class="about-link" src="/about"></a>
-        <a class="about-link" src="/about"></a>
-      </div>
-    </div>
-  );
-}
+const NavBar = () => (
+  <nav class="nav-bar">
+    <ul class="nav-bar-links">
+      <li class="about-link"><NavLink exact to='/'>Ponder</NavLink></li>
+      <li class="about-link"><NavLink exact to='/about'>About</NavLink></li>
+    </ul>
+  </nav>
+);
 
 export default NavBar;
