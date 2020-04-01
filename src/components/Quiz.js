@@ -36,7 +36,11 @@ function Quiz(props) {
         <QuestionCount counter={props.questionId} total={props.questionTotal} />
         <Question content={props.question} />
         <ul className="answerOptions">
-          {props.answerOptions.map(renderAnswerOptions)}
+          {props.answerOptions.length > 0 && renderAnswerOptions(props.answerOptions[0])}
+          <div className="orLabel">
+            <div>OR</div>
+          </div>
+          {props.answerOptions.length > 0 && renderAnswerOptions(props.answerOptions[1])}
         </ul>
       </div>
     </CSSTransitionGroup>
