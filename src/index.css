@@ -1,3 +1,8 @@
+html, body, div#root, div.App {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -75,7 +80,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #1752EB;
-  padding-right: 2%;
+  padding: 0px 2%;
   text-decoration: none;
 }
 
@@ -88,6 +93,7 @@ body {
   font-size: 20px;
   color: #1752EB;
   font-weight: 600;
+  padding: 0px;
 }
 
 .nav-bar-links a {
@@ -98,6 +104,7 @@ body {
 
 .App > div:nth-child(2) {
   position: relative;
+  height: calc(100% - 64px - 1.5rem);
 }
 
 .homeContainer {
@@ -112,7 +119,7 @@ body {
   height: 100%;
 
   background: url("./Ponder Background.png");
-  background-size: contain;
+  background-size: 80%;
 }
 
 .homeContent {
