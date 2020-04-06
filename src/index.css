@@ -61,15 +61,13 @@ body {
 .container {
   position: relative;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   background: white;
   border-radius: 3px;
 }
 
 @media (min-width: 769px) {
-  .container {
-    margin: 1.5rem auto;
-  }
+  
 }
 
 /* Nav Bar*/
@@ -93,6 +91,7 @@ body {
 }
 
 .nav-bar-links a {
+  color: white;
   text-decoration: none;
   padding: 0px 1rem;
 }
@@ -183,8 +182,6 @@ body {
 
 .moreInfo {
   margin-top: 1.5rem;
-  position: sticky;
-  top: calc(100% - 1.5rem);
 }
 .moreInfo > div {
   width: 100%;
