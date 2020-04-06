@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, Switch, Route } from 'react-router-dom';
 import QuizContainer from './QuizContainer';
 import AboutContainer from './AboutContainer';
+import HomeContainer from './HomeContainer';
 
 const PonderHome = () => (
   <div className='home'>
@@ -12,7 +13,9 @@ const PonderHome = () => (
 
 const MainContainer = () => (
   <Switch>
-      <Route exact path='/' component={QuizContainer}></Route>
+      <Route exact path='/' component={HomeContainer}></Route>
+      <Route exact path='/quiz' component={QuizContainer}></Route>
+      {/* <Route exact path='/feedback' component={FeedbackContainer}></Route> */}
       <Route exact path='/about' component={AboutContainer}></Route>
   </Switch>
 );

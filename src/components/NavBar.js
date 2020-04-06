@@ -5,6 +5,8 @@ const NavBar = () => (
   <nav class="nav-bar">
     <ul class="nav-bar-links">
       <li class="about-link"><NavLink exact to='/'>Ponder</NavLink></li>
+      <li class="about-link"><NavLink exact to='/'>Home</NavLink></li>
+      <li class="about-link"><NavLink exact to='/feedback'>Feedback</NavLink></li>
       <li class="about-link"><NavLink exact to='/about'>About</NavLink></li>
     </ul>
   </nav>
