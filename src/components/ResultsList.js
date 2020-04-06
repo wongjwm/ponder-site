@@ -95,8 +95,23 @@ function ResultsList(props) {
         })
       }
 
-       <h1>Resources</h1>
-       <p>Want to learn more? Here are some other resources to help you get more informed about the subject:</p>
+       <h1>Want to learn more?</h1>
+       <h2>Here are some resources to help you get more informed about data privacy:</h2>
+       <ul>
+         <li><a href="https://cdn.ttc.io/s/tacticaltech.org/a-data-day.pdf">A "Data-Day": An Visual Infographic of Data Collected in a Day</a></li>
+         <li><a href="https://myshadow.org/tracking-data-traces">Who's Collecting Our Data? How? and Why?: a specific guide to what is being collected and why</a></li>
+         <li><a href="https://www.nytimes.com/interactive/2019/opinion/internet-privacy-project.html">The NY Times Privacy Project: a project that explores the relationship between tech and society</a></li>
+         <li><a href="https://haveibeenpwned.com/">have i been pwned?: check your data breach status online</a></li>
+         <li><a href="https://info.graphics/stories/heatscore-password-patterns/">info.graphic's interactive narrative on password patterns</a></li>
+       </ul>
+
+       <h2>Take Control of Your Privacy with These Tools</h2>
+       <ul>
+         <li><a href="https://datadetoxkit.org/en/home">Data Detox Kit: Steps to controlling your digital privacy</a></li>
+         <li><a href="https://www.nytimes.com/interactive/2019/12/19/opinion/location-tracking-privacy-tips.html">The NY Times Location Tracking Privacy Tips</a></li>
+         <li><a href="https://1password.com/">1Password: a secure password manager</a></li>
+         <li><a href="https://www.eff.org/https-everywhere/">HTTPS Everywhere: a browser extension that secures your online presence</a></li>
+       </ul>
 
     </CSSTransitionGroup>
   );
