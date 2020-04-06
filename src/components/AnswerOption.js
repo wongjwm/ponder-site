@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function AnswerOption(props) {
+  // console.log(props);
   return (
-    <div class="answerOptionContainer" onClick={props.onAnswerSelected} > 
+    <div className="answerOptionContainer" onClick={props.onAnswerSelected} > 
       <li className="answerOption">
-        <div class="placeholderImage"></div>
-        <input
+        <img className="placeholderImage" src={props.image} />
+        {/* <input
           type="radio"
           className="radioCustomButton"
           name="radioGroup"
@@ -14,14 +15,13 @@ function AnswerOption(props) {
           id={props.answerType}
           value={props.answerType}
           disabled={props.answer}
-        />
+        /> */}
         <label className="radioCustomLabel" htmlFor={props.answerType}>
           {props.answerContent}
         </label>
       </li>
       <h2>{props.caption}</h2>
     </div>
-
   );
 }
 

@@ -14,12 +14,19 @@ function Quiz(props) {
         answerType={key.type}
         answer={props.answer}
         questionId={props.questionId}
-        image={props.image}
-        captionTitle={props.captionTitle}
-        caption={props.caption}
+        image={"./" + key.type + ".png"}
         onAnswerSelected={props.onAnswerSelected}
       />
     );
+  }
+
+  function renderAnswerCaptions(key) {
+    return (
+      <li>
+        <h3>{key.captionTitle}</h3>
+        <p>{key.caption}</p>
+      </li>
+    )
   }
 
   return (
@@ -42,6 +49,12 @@ function Quiz(props) {
           </div>
           {props.answerOptions.length > 0 && renderAnswerOptions(props.answerOptions[1])}
         </ul>
+        <div className="moreInfo">
+          <div>MORE INFO</div>
+          <ul className="answerCaptions">
+            { props.answerOptions.map(renderAnswerCaptions) }
+          </ul>
+        </div>
       </div>
     </CSSTransitionGroup>
   );
