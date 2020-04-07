@@ -13,31 +13,31 @@ function ResultsList(props) {
   var results = {
     "Textual Data": {
       "name": "Textual Data",
-      "description": "Many of us are constantly generating textual content in the form of emails, text messages, and social media posts, though the value of that content is typically seen as less than that of other types of data. Rather than possessing objective and more easily exploitable value, large amounts of textual content can be analyzed to glean similar insights. Messages mentioning people, places, and things point to connections or interests in those things that can be used by parties like advertising firms to paint a more accurate picture of who you actually are.      Personalized ads are often seen as more helpful than the invasion of privacy is harmful, but analysis of textual content can also be used to pick up on your address or even aspects of your personal schedule.",
+      "description": ["Many of us are constantly generating textual content in the form of emails, text messages, and social media posts, though the value of that content is typically seen as less than that of other types of data. Rather than possessing objective and more easily exploitable value, large amounts of textual content can be analyzed to glean similar insights. Messages mentioning people, places, and things point to connections or interests in those things that can be used by parties like advertising firms to paint a more accurate picture of who you actually are.", "Personalized ads are often seen as more helpful than the invasion of privacy is harmful, but analysis of textual content can also be used to pick up on your address or even aspects of your personal schedule."],
       "you": youOptions[0],
       "average": averageOptions[0],
     },
     "Image & Voice": {
       "name": "Image & Voice",
-      "description": "Voice and image recordings are collected through a wide range of methods, many of which are voluntary. Posts on social media make up for the majority of this type of data, and the dangers of publicly posting this type of content are fairly well known. Photos and videos can be used and re-posted without permission, or even analyzed to find out other information about you like your location. Voice assistants like Siri, Alexa, and Google Assistant are always listening for their activating keywords, even if that audio isn’t being listened to by another human being. Traffic and security cameras are generally accepted forms of involuntary voice and image data collection as they serve a necessary and understandable function, while others are seen as serious invasions of privacy. More prominent examples of this include unsecured webcams that can be hacked and even the National Security Agency’s surveillance of private citizens through phone calls.",
+      "description": ["Voice and image recordings are collected through a wide range of methods, many of which are voluntary. Posts on social media make up for the majority of this type of data, and the dangers of publicly posting this type of content are fairly well known. Photos and videos can be used and re-posted without permission, or even analyzed to find out other information about you like your location. Voice assistants like Siri, Alexa, and Google Assistant are always listening for their activating keywords, even if that audio isn’t being listened to by another human being.", "Traffic and security cameras are generally accepted forms of involuntary voice and image data collection as they serve a necessary and understandable function, while others are seen as serious invasions of privacy. More prominent examples of this include unsecured webcams that can be hacked and even the National Security Agency’s surveillance of private citizens through phone calls."],
       "you": youOptions[1],
       "average": averageOptions[1],
     },
     "Location": {
       "name": "Location",
-      "description": "Location data is primarily gathered through a person’s smartphone or other internet-enabled device. Services like delivery and rideshare apps, for example, obviously require their users’ locations in order to function. Search engines like Google might also ask for your location in order to personalize results to better suit your needs. These kinds of examples are voluntary, and primarily serve to increase convenience to the end user, so they are often accepted as worthwhile trade-offs for the benefits they provide. Some examples of location data collection may be less obvious and less voluntary. Point of Sales data is data that is generated whenever an in-store purchase is made, and includes not only payment method and items purchased but also the location of the purchase. Facial recognition technology used in smart city devices can also track your location while in public.",
+      "description": ["Location data is primarily gathered through a person’s smartphone or other internet-enabled device. Services like delivery and rideshare apps, for example, obviously require their users’ locations in order to function. Search engines like Google might also ask for your location in order to personalize results to better suit your needs. These kinds of examples are voluntary, and primarily serve to increase convenience to the end user, so they are often accepted as worthwhile trade-offs for the benefits they provide.", "Some examples of location data collection may be less obvious and less voluntary. Point of Sales data is data that is generated whenever an in-store purchase is made, and includes not only payment method and items purchased but also the location of the purchase. Facial recognition technology used in smart city devices can also track your location while in public."],
       "you": youOptions[2],
       "average": averageOptions[2],
     },
     "Relational Data": {
       "name": "Relational Data",
-      "description": "Relational data consists of a person’s connections to other people and things. Social media networks like Facebook largely account for the collection of this data, with a user’s Friends List and Likes providing significant usable data. Perhaps the most important use of relational data collected in this way is the ability of advertisers to create personalized ads for products and services you’re more likely to actually want. When this type of data collection is voluntary and provides a useful and convenient, most people consider it a valid trade-off rather than an invasion of privacy. One large-scale example of involuntary relational data collection is the Facebook–Cambridge Analytica scandal, which opened up a larger conversation about the ethics of social media networks and data privacy.",
+      "description": ["Relational data consists of a person’s connections to other people and things. Social media networks like Facebook largely account for the collection of this data, with a user’s Friends List and Likes providing significant usable data. Perhaps the most important use of relational data collected in this way is the ability of advertisers to create personalized ads for products and services you’re more likely to actually want.", "When this type of data collection is voluntary and provides a useful and convenient, most people consider it a valid trade-off rather than an invasion of privacy. One large-scale example of involuntary relational data collection is the Facebook–Cambridge Analytica scandal, which opened up a larger conversation about the ethics of social media networks and data privacy."],
       "you": youOptions[3],
       "average": averageOptions[3],
     },
     "Personal Metadata": {
       "name": "Personal Metadata",
-      "description": "Personal metadata consists of more raw information surrounding a person’s identity including their name, date of birth, bank account number and other financial information, social security number, etc. Many pieces of information can fall under this type of data, some of which are considered more private than others. The breadth of this data also means that it ends up in many different places as it is given to more and more apps and services, making it difficult to track exactly where it’s ended up and who has access to what. While your name and birthday might be freely given to a social media platform for the obvious benefits it would give you, one should never make their social security number public. Because personal metadata essentially defines a person’s identity it should be no surprise that this information can be used in identity theft.",
+      "description": ["Personal metadata consists of more raw information surrounding a person’s identity including their name, date of birth, bank account number and other financial information, social security number, etc. Many pieces of information can fall under this type of data, some of which are considered more private than others. The breadth of this data also means that it ends up in many different places as it is given to more and more apps and services, making it difficult to track exactly where it’s ended up and who has access to what.", "While your name and birthday might be freely given to a social media platform for the obvious benefits it would give you, one should never make their social security number public. Because personal metadata essentially defines a person’s identity it should be no surprise that this information can be used in identity theft."],
       "you": youOptions[4],
       "average": averageOptions[4],
     },
@@ -95,23 +95,28 @@ function ResultsList(props) {
         })
       }
 
-       <h1>Want to learn more?</h1>
-       <h2>Here are some resources to help you get more informed about data privacy:</h2>
-       <ul>
-         <li><a href="https://cdn.ttc.io/s/tacticaltech.org/a-data-day.pdf">A "Data-Day": An Visual Infographic of Data Collected in a Day</a></li>
-         <li><a href="https://myshadow.org/tracking-data-traces">Who's Collecting Our Data? How? and Why?: a specific guide to what is being collected and why</a></li>
-         <li><a href="https://www.nytimes.com/interactive/2019/opinion/internet-privacy-project.html">The NY Times Privacy Project: a project that explores the relationship between tech and society</a></li>
-         <li><a href="https://haveibeenpwned.com/">have i been pwned?: check your data breach status online</a></li>
-         <li><a href="https://info.graphics/stories/heatscore-password-patterns/">info.graphic's interactive narrative on password patterns</a></li>
-       </ul>
-
-       <h2>Take Control of Your Privacy with These Tools</h2>
-       <ul>
-         <li><a href="https://datadetoxkit.org/en/home">Data Detox Kit: Steps to controlling your digital privacy</a></li>
-         <li><a href="https://www.nytimes.com/interactive/2019/12/19/opinion/location-tracking-privacy-tips.html">The NY Times Location Tracking Privacy Tips</a></li>
-         <li><a href="https://1password.com/">1Password: a secure password manager</a></li>
-         <li><a href="https://www.eff.org/https-everywhere/">HTTPS Everywhere: a browser extension that secures your online presence</a></li>
-       </ul>
+      <div className="resourcesList">
+        <h1>Want to learn more?</h1>
+        <div className="result">
+          <h2>Get more informed about data privacy</h2>
+          <ul>
+            <li><a href="https://cdn.ttc.io/s/tacticaltech.org/a-data-day.pdf">A "Data-Day": An Visual Infographic of Data Collected in a Day</a></li>
+            <li><a href="https://myshadow.org/tracking-data-traces">Who's Collecting Our Data? How? and Why?: a specific guide to what is being collected and why</a></li>
+            <li><a href="https://www.nytimes.com/interactive/2019/opinion/internet-privacy-project.html">The NY Times Privacy Project: a project that explores the relationship between tech and society</a></li>
+            <li><a href="https://haveibeenpwned.com/">have i been pwned?: check your data breach status online</a></li>
+            <li><a href="https://info.graphics/stories/heatscore-password-patterns/">info.graphic's interactive narrative on password patterns</a></li>
+          </ul>
+        </div>
+        <div className="result">
+          <h2>Take Control of Your Privacy with These Tools</h2>
+          <ul>
+            <li><a href="https://datadetoxkit.org/en/home">Data Detox Kit: Steps to controlling your digital privacy</a></li>
+            <li><a href="https://www.nytimes.com/interactive/2019/12/19/opinion/location-tracking-privacy-tips.html">The NY Times Location Tracking Privacy Tips</a></li>
+            <li><a href="https://1password.com/">1Password: a secure password manager</a></li>
+            <li><a href="https://www.eff.org/https-everywhere/">HTTPS Everywhere: a browser extension that secures your online presence</a></li>
+          </ul>
+        </div>
+      </div>
 
     </CSSTransitionGroup>
   );

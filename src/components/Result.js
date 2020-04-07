@@ -10,7 +10,11 @@ function Result(props) {
     <div className="result">
       <h2>{props.vals.name}</h2>
       <ResultBar you={props.vals.you} average={props.vals.average} />
-      <p>{props.vals.description}</p>
+      {
+        props.vals.description.map(function(p, i) {
+          return ( <p>{p}</p> )
+        })
+      }
     </div>
   );
 }
