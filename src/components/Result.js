@@ -8,6 +8,7 @@ function Result(props) {
 
   return (
     <div className="result">
+      <img src={props.vals.name + ".png"} />
       <h2>{props.vals.name}</h2>
       <ResultBar you={props.vals.you} average={props.vals.average} />
       {

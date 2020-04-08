@@ -7,15 +7,6 @@ function AnswerOption(props) {
     <div className="answerOptionContainer" onClick={props.onAnswerSelected} > 
       <li className="answerOption">
         <img className="placeholderImage" src={props.image} />
-        {/* <input
-          type="radio"
-          className="radioCustomButton"
-          name="radioGroup"
-          checked={props.answerType === props.answer}
-          id={props.answerType}
-          value={props.answerType}
-          disabled={props.answer}
-        /> */}
         <label className="radioCustomLabel" htmlFor={props.answerType}>
           {props.answerContent}
         </label>
