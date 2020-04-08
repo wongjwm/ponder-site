@@ -6,7 +6,7 @@ function AnswerOption(props) {
   return (
     <div className="answerOptionContainer" onClick={props.onAnswerSelected} > 
       <li className="answerOption">
-        <img className="placeholderImage" src={props.image} />
+        <img className="placeholderImage" src={props.image} alt="" />
         <label className="radioCustomLabel" htmlFor={props.answerType}>
           {props.answerContent}
         </label>
@@ -19,7 +19,6 @@ function AnswerOption(props) {
 AnswerOption.propTypes = {
   answerType: PropTypes.string.isRequired,
   answerContent: PropTypes.string.isRequired,
-  answer: PropTypes.string.isRequired,
   onAnswerSelected: PropTypes.func.isRequired
 };
 

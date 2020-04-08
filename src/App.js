@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import ResultsList from './components/ResultsList';
-import logo from './svg/logo.svg';
 import './App.css';
-import { NavLink, Switch, Route } from 'react-router-dom';
 import MainContainer from './components/MainContainer';
 import NavBar from './components/NavBar';
 

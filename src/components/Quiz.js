@@ -20,9 +20,9 @@ function Quiz(props) {
     );
   }
 
-  function renderAnswerCaptions(key) {
+  function renderAnswerCaptions(key, i) {
     return (
-      <li>
+      <li key={i}>
         <div>MORE INFO 🠇</div>
         <div>
           <h3>{key.captionTitle}</h3>
@@ -61,7 +61,6 @@ function Quiz(props) {
 }
 
 Quiz.propTypes = {
-  answer: PropTypes.string.isRequired,
   answerOptions: PropTypes.array.isRequired,
   question: PropTypes.string.isRequired,
   questionId: PropTypes.number.isRequired,

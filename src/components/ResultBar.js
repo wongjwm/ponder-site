@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 function ResultBar(props) {
   var youPosn = props.you*25;
@@ -20,8 +19,8 @@ function ResultBar(props) {
               zIndex: youPosn > averagePosn ? 2 : 1}} />
         </div>
 
-        <label className="response" style={{left: "calc(" + (youPosn + "%") + " - 50px"}}>You</label>
-        <label className="average" style={{left: "calc(" + (averagePosn + "%") + " - 50px"}}>Average</label>
+        <label className="response" style={{left: "calc(" + youPosn + "% - 50px"}}>You</label>
+        <label className="average" style={{left: "calc(" + averagePosn + "% - 50px"}}>Average</label>
       </div>
 
       <div className="highPriority">high priority</div>
