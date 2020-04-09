@@ -26,8 +26,8 @@ class HomeContainer extends Component {
 
   renderHome() {
     return (
-      <div className="container homeContainer">
-        <div className="background" />
+      <div className="container" id="HomeContainer">
+        <img src="Ponder Background.png" alt="" />
         <div className="homeContent">
           <h1>Ponder</h1>
           <h2>Would you rather...?</h2>
