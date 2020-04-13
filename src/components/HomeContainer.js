@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 class HomeContainer extends Component {
   constructor(props) {
@@ -32,7 +34,7 @@ class HomeContainer extends Component {
           <h1>Ponder</h1>
           <h2>Would you rather...?</h2>
           <p>a platform for gathering opinions on data privacy</p>
-          <button onClick={this.handleIntro}>START</button>
+          <button onClick={this.handleIntro}>START <FontAwesomeIcon icon={faArrowRight} /></button>
         </div>
       </div>
     );
@@ -45,7 +47,7 @@ class HomeContainer extends Component {
         <p>You grew up with technology. It makes your life very convenient and customizable.</p>
         <p>That being said, how do you make decisions regarding technology?</p>
         <p>You’ll be presented with 10 scenarios. What would you do if these situations presented themselves in real life?</p>
-        <NavLink exact to='/quiz'><button>NEXT</button></NavLink>
+        <NavLink exact to='/quiz'><button>NEXT <FontAwesomeIcon icon={faArrowRight} /></button></NavLink>
       </div>
     );
   }

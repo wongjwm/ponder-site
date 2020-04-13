@@ -1,6 +1,5 @@
 import React from 'react';
 import {Radar} from 'react-chartjs-2';
-
 import { CSSTransitionGroup } from 'react-transition-group';
 import Result from './Result.js';
 

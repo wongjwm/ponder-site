@@ -4,6 +4,8 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import Question from '../components/Question';
 import QuestionCount from '../components/QuestionCount';
 import AnswerOption from '../components/AnswerOption';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 function Quiz(props) {
   function renderAnswerOptions(key) {
@@ -23,7 +25,7 @@ function Quiz(props) {
   function renderAnswerCaptions(key, i) {
     return (
       <li key={i}>
-        <div>MORE INFO 🠇</div>
+        <div>MORE INFO <FontAwesomeIcon icon={faArrowDown} /></div>
         <div>
           <h3>{key.captionTitle}</h3>
           <p>{key.caption}</p>

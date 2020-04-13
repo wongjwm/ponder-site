@@ -143,15 +143,20 @@ body {
 .homeContent > p {
   margin: 3rem 0;
 }
-.homeContent > button {
+.homeContent button,
+.container.intro button {
   background: #EAF6C8;
   color: #1752EB;
   font-weight: bold;
 
   border: none;
   border-radius: 13px;
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
   cursor: pointer;
+}
+.homeContent button > svg,
+.container.intro button > svg {
+  margin-left: 0.5rem;
 }
 
 .container.intro {
@@ -166,12 +171,6 @@ body {
 .container.intro button {
   background: #3B7D71;
   color: white;
-  font-weight: bold;
-
-  border: none;
-  border-radius: 13px;
-  padding: 1rem 2.5rem;
-  cursor: pointer;
   float: right;
 }
 
@@ -205,6 +204,7 @@ body {
 }
 .answerCaptions > li > div:last-child {
   width: 100%;
+  height: calc(100% - 46px);
   padding: 1.5rem;
   
   border: 2px solid #1752EB;
