@@ -179,6 +179,10 @@ body {
   padding: 1.5rem 2.5rem;
 }
 
+.result h3 {
+  color: black;
+}
+
 /* Quiz Component */
 .answerOptions,
 .answerCaptions {
@@ -350,7 +354,7 @@ body {
   border-radius: 10px;
   object-fit: cover;
 
-  margin: 0 auto 1.5rem;
+  margin: 2.5rem auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -358,6 +362,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0px 0px 3rem;
 }
 .resultsbar {
   position: relative;
@@ -460,7 +465,7 @@ body {
 .resourcesList h2 {
   color: black;
 }
-.resourcesList ul {
+ul.links {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -468,11 +473,11 @@ body {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
-.resourcesList ul > li {
+ul.links > li {
   position: relative;
   padding: 10px 15px;
 }
-.resourcesList ul > li:not(:first-of-type)::before {
+ul.links > li:not(:first-of-type)::before {
   content: '';
   display: block;
   position: absolute;
@@ -482,10 +487,10 @@ body {
   height: 1px;
   background: rgba(0, 0, 0, 0.063);
 }
-.resourcesList a {
+ul.link a {
   font-family: Avenir;
 }
-.resourcesList ul > li:not(:hover) > a {
+ul.links > li:not(:hover) > a {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }

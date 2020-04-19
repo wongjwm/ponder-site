@@ -10,7 +10,7 @@ var quizQuestions = [
         },
         {
             type: "Relational Data",
-            content: "A site you logged into with your Facebook account access your information as well that of your friends",
+            content: "A site you logged into with your Facebook account accesses your info, as well as your friend's info",
             captionTitle: "Facebook",
             caption: "The world's largest social media platform, with 2.4 billion users."
         }
@@ -27,7 +27,7 @@ var quizQuestions = [
         },
         {
             type: "Location",
-            content: "Snapchat's map feature shows your location to unknown viewers",
+            content: "Snapchat's Snap Map feature shows your location to people you don't know",
             captionTitle: "Snapchat",
             caption: "A mobile-first social media platform with an opt-out map feature called Snap Map."
         }
