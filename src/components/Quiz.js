@@ -28,7 +28,9 @@ function Quiz(props) {
         <div>MORE INFO <FontAwesomeIcon icon={faArrowDown} /></div>
         <div>
           <h3>{key.captionTitle}</h3>
-          <p>{key.caption}</p>
+          <ul>
+            {key.caption.map(function(li, i) { return ( <li>{li}</li> ) } )}
+          </ul>
         </div>
       </li>
     )

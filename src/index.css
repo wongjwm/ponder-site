@@ -209,10 +209,6 @@ body {
 .answerCaptions > li > div:last-child {
   width: 100%;
   height: calc(100% - 46px);
-  padding: 1.5rem;
-  
-  border: 2px solid #1752EB;
-  border-radius: 10px;
 }
 .answerCaptions > li h3 {
   color: #1752EB;
@@ -221,8 +217,11 @@ body {
   font-size: 1.5rem;
   margin: 0 0 0.5rem;
 }
-.answerCaptions > li p {
-  margin: 0;
+.answerCaptions > li ul {
+  padding: 0px 0px 0px 1em;
+}
+.answerCaptions > li ul > li:not(:first-child) {
+  margin-top: 0.5rem;
 }
 
 /* QuestionCount Component */

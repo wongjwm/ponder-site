@@ -4,7 +4,7 @@ import ResultBar from './ResultBar.js';
 function Result(props) {
   var moreOrLess = "";
   if(props.vals.you > props.vals.average) moreOrLess = "a higher priority for you than";
-  else if(props.vals.you == props.vals.average) moreOrLess = "as much of a priority for you as";
+  else if(props.vals.you === props.vals.average) moreOrLess = "as much of a priority for you as";
   else moreOrLess = "less of a priority for you than";
 
   return (
