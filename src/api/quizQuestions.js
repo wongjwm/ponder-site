@@ -111,13 +111,13 @@ var textualData = [
         type: "Textual Data",
         content: "Your emails and text messages are accessed by the National Security Agency in an effort to detect threats to national security",
         captionTitle: "Government and Data",
-        caption: ["Not finished yet..."]
+        caption: ["From 2001 to 2007, the National Security Agency (NSA) engaged in surveillance of United States citizens and without warrants, as part of the Terrorist Surveillance Program. They were able to access phone calls, internet activity, text messages and other communication.", "Are some of these types of information more private than others? Which of these, if any, would you be comfortable with the NSA having access to if it meant they were able to catch terrorists?"]
     },
     {
         type: "Textual Data",
         content: "Your tweets are able to be found by your employer even though you do not use your last name on your account",
-        captionTitle: "Untitled",
-        caption: ["Not finished yet..."]
+        captionTitle: "Employers and Data",
+        caption: ["More than half of employers save that they have found content on social media that has caused them not to hire someone for a job. Especially when you have multiple social media accounts, it can be hard to keep track of what data you've left for anyone to see. Make sure that what you've put out there shows you how you'd like to be seen."]
     },
     {
         type: "Textual Data",
@@ -129,7 +129,7 @@ var textualData = [
         type: "Textual Data",
         content: "Facebook is able to hand over a detailed record of all your posts to the government upon request, even if your account is deactivated",
         captionTitle: "Government and Data",
-        caption: ["Not finished yet..."]
+        caption: ["In 2015 and 2016, Apple was involved in a legal dispute with federal government for refusing to create a backdoor into iOS for the FBI. This would allow the FBI to access the data stored on civilian Apple smart phones in order to combat events like the then recent mass shooting in San Bernardino California.", "Would you want the FBI and other law enforcement agencies to be able to gain backdoor access to the content of your phone? Is it a worthwhile tradeoff to help them better tackle violent crimes?"]
     },
 ];
 
