@@ -3,7 +3,7 @@ var imageAndVoice = [
         type: "Image & Voice",
         content: "Amazon reveals that employees are able to listen in on random users' Echo voice recordings, without notifying users",
         captionTitle: "Amazon Alexa",
-        caption: ["Amazon's Alexa is a voice assistant that allows you to look up information with voice commands, play and control music, and send messages along with many other uses. Alexa is available on both smart phones and smart home devices such as the Amazon Echo.", "Amazon is always listening, but with over 100 million Alexa-enabled smart home devices sold, it's impossible for Amazon employees to be listening to all the audio recorded, and very unlikely that they are listening to one specific device's recorded audio at any given time."]
+        caption: ["Amazon's Alexa is a voice assistant that allows you to look up information with voice commands, play and control music, and send messages along with many other uses.", "Alexa is available on both smart phones and smart home devices such as the Amazon Echo.", "Amazon is always listening, but with over 100 million Alexa-enabled smart home devices sold, it's impossible for Amazon employees to be listening to all the audio recorded, and very unlikely that they are listening to one specific device's recorded audio at any given time."]
     },
     {
         type: "Image & Voice",
@@ -15,13 +15,13 @@ var imageAndVoice = [
         type: "Image & Voice",
         content: "TikTok use your content for its ads without any of your formal consent",
         captionTitle: "TikTok",
-        caption: ["TikTok is a mobile-first social media and video-sharing app that became the #1 most downloaded app in 2018 and 2019. The platform's Terms of Service states that content published on the platform may be used as advertising material for the app itself.", "The app also became the subject of serious national security concerns in 2019. It was alleged  images, video, and even location data could be collected from devices in the United States and then turned over to the Chinese government in accordance with the Chinese Internet Security Law."]
+        caption: ["TikTok is a mobile-first social media and video-sharing app that became the #1 most downloaded app in 2018 and 2019.", "The platform's Terms of Service states that content published on the platform may be used as advertising material for the app itself.", "The app also became the subject of serious national security concerns in 2019. It was alleged  images, video, and even location data could be collected from devices in the United States and then turned over to the Chinese government in accordance with the Chinese Internet Security Law."]
     },
     {
         type: "Image & Voice",
         content: "After deleting a photo from Facebook, it is still shown in Google image search results of your name ",
         captionTitle: "Deleted Content",
-        caption: ["Facebook's Help Center states that some content is removed from their servers and backup systems when deleted, but that other types of content remain until your account is permanently deleted.", "PersonalData.IO claims that \"log data\" which can include when you log in, click into a group, or post a comment, as well as information or messages from you but stored on other people's Facebook accounts, is kept even after your account is permanently deleted."]
+        caption: ["Some content is removed from Facebook's servers and backup systems when deleted, but that other types of content remain until your account is permanently deleted. (source: Facebook's Help Center)", "PersonalData.IO claims that \"log data\" which can include when you log in, click into a group, or post a comment, as well as information or messages from you but stored on other people's Facebook accounts, is kept even after your account is permanently deleted."]
     },
 ];
 
@@ -40,7 +40,7 @@ var personalMetadata = [
     },
     {
         type: "Personal Metadata",
-        content: "The network you use is found to be vulnerable to a malicious third-party that was able to access your internet history",
+        content: "The wifi network you use is found to be vulnerable to a malicious third-party that was able to access your internet history",
         captionTitle: "Network Security",
         caption: ["Public networks like those found in restaurants or airports are open to everyone, and can be abused to gain information on you or even infect your device with malware.", "One way of protecting yourself and your devices is through the use of a Virtual Private Network (VPN). VPN applications create a private network you can connect to in order to mask your online activity. These networks reroute your activity through secure servers in other parts of the world, hiding your internet history as well as your location."]
     },
@@ -48,7 +48,7 @@ var personalMetadata = [
         type: "Personal Metadata",
         content: "Twitter adds your birthdate to your Twitter profile bio by default without asking for permission",
         captionTitle: "Twitter",
-        caption: ["Launched in 2006, Twitter now has 330 million monthly active users. Like all social media platforms, it requires new users to input their data of birth to ensure that they are an appropriate age to be using the service and see some of the content posted there.", "Your birthdate falls under the category of Personal Metadata, which means that it's information that describes you and your identity rather than just being information about you. This piece of info might not seem like a big deal, but where do you draw the line?"]
+        caption: ["Launched in 2006, Twitter now has 330 million monthly active users. Like all social media platforms, it requires new users to input their data of birth to ensure that they are an appropriate age to be using the service and see certain content posted there.", "Your birthdate falls under the category of Personal Metadata, which means that it's information that describes you and your identity rather than just being information about you. This piece of info might not seem like a big deal, but where do you draw the line?"]
     },
 ];
 
@@ -101,7 +101,7 @@ var relationalData = [
     {
         type: "Relational Data",
         content: "A scammer messages you through a social media platform, pretending to be a close family member",
-        captionTitle: "Untitled",
+        captionTitle: "Your Online Relationships",
         caption: ["Not finished yet..."]
     },
 ];
@@ -117,7 +117,7 @@ var textualData = [
         type: "Textual Data",
         content: "Your tweets are able to be found by your employer even though you do not use your last name on your account",
         captionTitle: "Employers and Data",
-        caption: ["More than half of employers save that they have found content on social media that has caused them not to hire someone for a job. Especially when you have multiple social media accounts, it can be hard to keep track of what data you've left for anyone to see. Make sure that what you've put out there shows you how you'd like to be seen."]
+        caption: ["More than half of employers say that they have found content on social media that has caused them not to hire someone for a job. When you have multiple social media accounts, it can be hard to keep track of what data you've left for anyone to see. Make sure that what you've put out there shows you how you'd like to be seen."]
     },
     {
         type: "Textual Data",

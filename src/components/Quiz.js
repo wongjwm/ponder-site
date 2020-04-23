@@ -57,7 +57,7 @@ function Quiz(props) {
           {props.answerOptions.length > 0 && renderAnswerOptions(props.answerOptions[1])}
         </ul>
         <ul className="answerCaptions">
-          { props.answerOptions.map(renderAnswerCaptions) }
+          {props.answerOptions.map(renderAnswerCaptions)}
         </ul>
       </div>
     </CSSTransitionGroup>

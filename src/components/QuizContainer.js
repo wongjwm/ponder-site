@@ -14,7 +14,8 @@ class QuizContainer extends Component {
       question: '',
       answerOptions: [],
       answer: '',
-      answersCount: {},
+      answerMap: {"Image & Voice": 0, "Personal Metadata" : 0, "Location" : 0, 
+                    "Relational Data" : 0, "Textual Data" : 0},
       result: ''
     };
 
@@ -52,7 +53,7 @@ class QuizContainer extends Component {
   }
 
   handleAnswerSelected(event) {
-    this.setUserAnswer(event.currentTarget.value);
+    this.setUserAnswer(event.currentTarget.id);
 
     if (this.state.questionId < quizQuestions.length) {
       setTimeout(() => this.setNextQuestion(), 300);
@@ -62,13 +63,16 @@ class QuizContainer extends Component {
   }
 
   setUserAnswer(answer) {
-    this.setState((state, props) => ({
-      answersCount: {
-        ...state.answersCount,
-        [answer]: (state.answersCount[answer] || 0) + 1
-      },
+    this.setState((state, props) => (
+      { answerMap: {...state.answerMap, [answer]: (state.answerMap[answer] || 0) + 1},
+      // answersCount: {
+      //   ...state.answersCount,
+      //   [answer]: (state.answersCount[answer] || 0) + 1
+      // },
       answer: answer
     }));
+    console.log("current answer map");
+    console.log(this.state.answerMap);
   }
 
   setNextQuestion() {
@@ -85,20 +89,12 @@ class QuizContainer extends Component {
   }
 
   getResults() {
-    const answersCount = this.state.answersCount;
-    const answersCountKeys = Object.keys(answersCount);
-    const answersCountValues = answersCountKeys.map(key => answersCount[key]);
-    const maxAnswerCount = Math.max.apply(null, answersCountValues);
-
-    return answersCountKeys.filter(key => answersCount[key] === maxAnswerCount);
+    const answersCount = this.state.answerMap;
+    return answersCount;
   }
 
   setResults(result) {
-    if (result.length === 1) {
-      this.setState({ result: result[0] });
-    } else {
-      this.setState({ result: 'Undetermined' });
-    }
+    this.setState({ result: result});
   }
 
   renderQuiz() {

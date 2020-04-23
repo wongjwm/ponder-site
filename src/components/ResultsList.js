@@ -4,15 +4,14 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import Result from './Result.js';
 
 function ResultsList(props) {
-  var youOptions = [0, 1, 2, 3, 4],
-      averageOptions = [0, 1, 2, 3, 4];
-  youOptions.sort(() => Math.random() - 0.5);
+  const youResults = props.quizResult;
+  var averageOptions = [0, 1, 2, 3, 4];
   averageOptions.sort(() => Math.random() - 0.5);
 
   var results = {
     "Textual Data": {
       "name": "Textual Data",
-      "you": youOptions[0],
+      "you": youResults["Textual Data"],
       "average": averageOptions[0],
       "description": ["Many of us are constantly generating textual content in the form of emails, text messages, and social media posts, though the value of that content is typically seen as less than that of other types of data. Rather than possessing objective and more easily exploitable value, large amounts of textual content can be analyzed to glean similar insights. Messages mentioning people, places, and things point to connections or interests in those things that can be used by parties like advertising firms to paint a more accurate picture of who you actually are.", "Personalized ads are often seen as more helpful than the invasion of privacy is harmful, but analysis of textual content can also be used to pick up on your address or even aspects of your personal schedule."],
       "links": [{name: "Documents Confirm How the NSA's Surveillance Procedures Threaten Americans' Privacy", url: "https://www.aclu.org/fact-sheet/documents-confirm-how-nsas-surveillance-procedures-threaten-americans-privacy"},
@@ -21,7 +20,7 @@ function ResultsList(props) {
     },
     "Image & Voice": {
       "name": "Image & Voice",
-      "you": youOptions[1],
+      "you": youResults["Image & Voice"],
       "average": averageOptions[1],
       "description": ["Voice and image recordings are collected through a wide range of methods, many of which are voluntary. Posts on social media make up for the majority of this type of data, and the dangers of publicly posting this type of content are fairly well known. Photos and videos can be used and re-posted without permission, or even analyzed to find out other information about you like your location. Voice assistants like Siri, Alexa, and Google Assistant are always listening for their activating keywords, even if that audio isn’t being listened to by another human being.", "Traffic and security cameras are generally accepted forms of involuntary voice and image data collection as they serve a necessary and understandable function, while others are seen as serious invasions of privacy. More prominent examples of this include unsecured webcams that can be hacked and even the National Security Agency’s surveillance of private citizens through phone calls."],
       "links": [{name: "Inside Amazon’s plan for Alexa to run your entire life", url: "https://www.technologyreview.com/2019/11/05/65069/amazon-alexa-will-run-your-life-data-privacy/"},
@@ -31,7 +30,7 @@ function ResultsList(props) {
     },
     "Location": {
       "name": "Location",
-      "you": youOptions[2],
+      "you": youResults["Location"],
       "average": averageOptions[2],
       "description": ["Location data is primarily gathered through a person’s smartphone or other internet-enabled device. Services like delivery and rideshare apps, for example, obviously require their users’ locations in order to function. Search engines like Google might also ask for your location in order to personalize results to better suit your needs. These kinds of examples are voluntary, and primarily serve to increase convenience to the end user, so they are often accepted as worthwhile trade-offs for the benefits they provide.", "Some examples of location data collection may be less obvious and less voluntary. Point of Sales data is data that is generated whenever an in-store purchase is made, and includes not only payment method and items purchased but also the location of the purchase. Facial recognition technology used in smart city devices can also track your location while in public."],
       "links": [{name: "Your Apps Know Where You Were Last Night, and They're Not Keeping It Secret", url: "https://www.nytimes.com/interactive/2018/12/10/business/location-data-privacy-apps.html"},
@@ -40,7 +39,7 @@ function ResultsList(props) {
     },
     "Relational Data": {
       "name": "Relational Data",
-      "you": youOptions[3],
+      "you": youResults["Relational Data"],
       "average": averageOptions[3],
       "description": ["Relational data consists of a person’s connections to other people and things. Social media networks like Facebook largely account for the collection of this data, with a user’s Friends List and Likes providing significant usable data. Perhaps the most important use of relational data collected in this way is the ability of advertisers to create personalized ads for products and services you’re more likely to actually want.", "When this type of data collection is voluntary and provides a useful and convenient, most people consider it a valid trade-off rather than an invasion of privacy. One large-scale example of involuntary relational data collection is the Facebook–Cambridge Analytica scandal, which opened up a larger conversation about the ethics of social media networks and data privacy."],
       "links": [{name: "I Downloaded the Information That Facebook Has on Me. Yikes.", url: "https://www.nytimes.com/2018/04/11/technology/personaltech/i-downloaded-the-information-that-facebook-has-on-me-yikes.html"},
@@ -49,7 +48,7 @@ function ResultsList(props) {
     },
     "Personal Metadata": {
       "name": "Personal Metadata",
-      "you": youOptions[4],
+      "you": youResults["Personal Metadata"],
       "average": averageOptions[4],
       "description": ["Personal metadata consists of more raw information surrounding a person’s identity including their name, date of birth, bank account number and other financial information, social security number, etc. Many pieces of information can fall under this type of data, some of which are considered more private than others. The breadth of this data also means that it ends up in many different places as it is given to more and more apps and services, making it difficult to track exactly where it’s ended up and who has access to what.", "While your name and birthday might be freely given to a social media platform for the obvious benefits it would give you, one should never make their social security number public. Because personal metadata essentially defines a person’s identity it should be no surprise that this information can be used in identity theft."],
       "links": [{name: "I Downloaded the Information That Facebook Has on Me. Yikes.", url: "https://www.nytimes.com/2018/04/11/technology/personaltech/i-downloaded-the-information-that-facebook-has-on-me-yikes.html"},
