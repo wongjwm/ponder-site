@@ -104,7 +104,7 @@ var relationalData = [
         type: "Relational Data",
         content: "Your direct messages with a company's page are stored indefinitely on the company's servers",
         captionTitle: "Companies & Your History",
-        caption: ["Companies will keep logs of your messages as a record. They also have access"]
+        caption: ["Companies will keep logs of your messages for their records. Your interaction to that company is forever stored in their databases."]
     },
     {
         type: "Relational Data",
