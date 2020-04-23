@@ -10,7 +10,6 @@ function AnswerOption(props) {
           {props.answerContent}
         </label>
       </li>
-      <h2>{props.caption}</h2>
     </div>
   );
 }

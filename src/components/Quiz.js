@@ -25,7 +25,7 @@ function Quiz(props) {
   function renderAnswerCaptions(key, i) {
     return (
       <li key={i}>
-        <div>MORE INFO <FontAwesomeIcon icon={faArrowDown} /></div>
+        <div className="icon">MORE INFO <FontAwesomeIcon icon={faArrowDown} /></div>
         <div>
           <h3>{key.captionTitle}</h3>
           <ul>
