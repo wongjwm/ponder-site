@@ -86,7 +86,7 @@ var locationData = [
     },
     {
         type: "Location",
-        content: "Certain websites use you computer's location to target ads related to where you live",
+        content: "Certain websites use your computer's location to target ads related to where you live",
         captionTitle: "Ads and Location",
         caption: ["Advertisers buy data about you so that they can create a more accurate profile on who you are and show you ads you're more likely to click on. Your location, such as the city you live in, is important for advertising things like local restaurants.", "They can also get location information from the ads themselves. \"Bidstream data\" refers to data collected when you see ads. This data can include the URL where you're seeing the ad, the type of device you're using, your IP address, location, and even audience demographic data."]
     },
@@ -102,9 +102,9 @@ var relationalData = [
     },
     {
         type: "Relational Data",
-        content: "Your direct messages with a brand's page are stored indefinitely on the company's servers",
-        captionTitle: "Untitled",
-        caption: ["Not finished yet..."]
+        content: "Your direct messages with a company's page are stored indefinitely on the company's servers",
+        captionTitle: "Companies & Your History",
+        caption: ["Companies will keep logs of your messages as a record. They also have access"]
     },
     {
         type: "Relational Data",
