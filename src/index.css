@@ -117,6 +117,52 @@ body {
   position: relative;
 }
 
+#GameContainer {
+  padding: 100px;
+}
+
+#GameContainer div.logo {
+  text-align: center;
+}
+#GameContainer div.logo h1,
+#GameContainer div.logo h2 {
+  margin: 0px;
+  padding: 0px
+}
+#GameContainer div.logo > h2 {
+  color: #1752EB;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-bottom: -0.5rem;
+}
+#GameContainer div.logo > h1 {
+  color: #444;
+  font-family: Avenir;
+  font-size: 3rem;
+}
+#GameContainer div.logo > h1 > span {
+  opacity: 0.5;
+}
+
+#GameContainer > a {
+  display: block;
+  margin: 1.5rem 0;
+  text-align: right;
+}
+#GameContainer > a > button {
+  background: #EAF6C8;
+  color: #1752EB;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 13px;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+#GameContainer a > button svg {
+  margin-right: 0.5rem;
+}
+
 #HomeContainer {
   position: relative;
   max-width: 900px;

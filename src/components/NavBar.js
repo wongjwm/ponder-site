@@ -7,8 +7,8 @@ const NavBar = () => (
       <li className="about-link"><NavLink exact to='/'>Ponder</NavLink></li>
       <li className="about-link">
         <NavLink exact to='/'>Home</NavLink>
-        <NavLink exact to='/feedback'>Feedback</NavLink>
         <NavLink exact to='/about'>About</NavLink>
+        <NavLink exact to='/humandata'>HumanData</NavLink>
       </li>
     </ul>
   </nav>
