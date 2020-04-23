@@ -8,6 +8,7 @@ const NavBar = () => (
       <li className="about-link">
         <NavLink exact to='/'>Home</NavLink>
         <NavLink exact to='/about'>About</NavLink>
+        <a target="_blank" href="https://forms.gle/Gs17sHsiL5wX4ygX6">Feedback</a>
         <NavLink exact to='/humandata'>HumanData</NavLink>
       </li>
     </ul>

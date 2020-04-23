@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class HomeContainer extends Component {
   constructor(props) {
@@ -42,13 +43,23 @@ class HomeContainer extends Component {
 
   renderIntro() {
     return (
+      <CSSTransitionGroup
+      className="container intro"
+      component="div"
+      transitionName="fade"
+      transitionEnterTimeout={800}
+      transitionLeaveTimeout={500}
+      transitionAppear
+      transitionAppearTimeout={500}
+    >
       <div className="container intro">
-        <p>You might have received your first smartphone at age 10. Maybe your school had iPads. Maybe you’ve only ever seen a flip phone in a museum.</p>
-        <p>You grew up with technology. It makes your life very convenient and customizable.</p>
-        <p>That being said, how do you make decisions regarding technology?</p>
-        <p>You’ll be presented with 10 scenarios. What would you do if these situations presented themselves in real life?</p>
+        <h4>You might have received your first smartphone at age 10. Maybe you’ve only ever seen a flip phone in a museum. Maybe your school has iPads.</h4>
+        <h4>You grew up with technology. It makes your life very convenient and customizable.</h4>
+        <h3>That being said, how do you make decisions regarding technology?</h3>
+        <h3>You’ll be presented with 10 scenarios. These are all scenarios that have happened at some point. What would you do if these situations presented themselves in real life?</h3>
         <NavLink exact to='/quiz'><button>NEXT <FontAwesomeIcon icon={faArrowRight} /></button></NavLink>
       </div>
+      </CSSTransitionGroup>
     );
   }
 
