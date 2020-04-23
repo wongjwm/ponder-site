@@ -101,7 +101,7 @@ function ResultsList(props) {
     >
       <h1>Results</h1>
       <Radar data={radar.data} options={radar.options} />
-      <p>Thank you for taking the time to complete this activity and to consider the impact of data privacy on your life and those of others! If you didn't know it already, each of the scenarios you saw are real-world data privacy situations that you or someone you know may have dealt with in the past. Gen Z has largely been an unheard voice when it comes to this subject, but by staying informed you might have a chance to change that.</p>
+      <p>Thank you for taking the time to complete this activity and to consider the impact of data privacy on your life and those of others! If you didn't know it already, each of the scenarios you saw are <b>real-world</b> data privacy situations that you or someone you know may have dealt with in the past. Gen Z has largely been an unheard voice when it comes to this subject, but by staying informed you might have a chance to change that.</p>
       <p>We’ve analyzed your responses to determine which types of data seem to be more important or higher priorities for you. The above chart shows those results and how they compare to the average response. Continue reading below for more information on each type of data and for more resources related to data privacy.</p>
 
       {

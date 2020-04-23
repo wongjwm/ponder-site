@@ -17,7 +17,7 @@ function Result(props) {
         })
       }
 
-      <p>We think {props.vals.name} is {moreOrLess} it is for most people:</p>
+      <p>We think <b>{props.vals.name}</b> is <b>{moreOrLess}</b> it is for most people:</p>
       <ResultBar you={props.vals.you} average={props.vals.average} />
 
       <h3>{props.vals.name} privacy resources</h3>

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import QuizContainer from './components/QuizContainer';
+import App from './App.js';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render((
   <BrowserRouter>
-    <QuizContainer />
+    <App />
   </BrowserRouter>
   ), document.getElementById('root')
 );
