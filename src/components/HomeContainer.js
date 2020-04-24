@@ -34,7 +34,7 @@ class HomeContainer extends Component {
         <div className="homeContent">
           <h1>Ponder</h1>
           <h2>Would you rather...?</h2>
-          <p>a platform for gathering opinions on data privacy</p>
+          <p>a platform for gathering high schoolers' opinions on data privacy</p>
           <button onClick={this.handleIntro}>START <FontAwesomeIcon icon={faArrowRight} /></button>
         </div>
       </div>
