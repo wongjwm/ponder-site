@@ -11,9 +11,7 @@ class GameContainer extends Component {
     }
   }
  
-  render() {
-    const { pageNumber, numPages } = this.state;
- 
+  render() { 
     return (
       <div id="GameContainer" className="container">
         <div className="logo">
